@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Book Collection</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search books...">
+            <select id="genre-filter">
+                <option value="">All Genres</option>
+            </select>
+            <select id="sort">
+                <option value="title">Sort by Title</option>
+                <option value="author">Sort by Author</option>
+                <option value="rating">Sort by Rating</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <div id="data-container" class="books-grid">
+            <!-- Books will be dynamically inserted here -->
+        </div>
+        <div class="pagination">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
